@@ -10,11 +10,11 @@ A policy for Aserto's sample "Todo" application.
 
 `src/policies` contains the policy modules associated with the peoplefinder sample:
 
-* todo.DELETE.__ownerID.rego - `todoApp.DELETE.todo.__ownerID` - policy for `DELETE /todo/{ownerID}`
-* todo.GET.user.__userID.rego - `todoApp.GET.user.__userID` - policy for `GET /user/{userID}`
-* todo.POST.rego - `todoApp.POST.todo` - policy for `POST /todo`
-* todo.PUT.__ownerID.rego - `todoApp.PUT.todo.__ownerID` - policy for `PUT /todo/{ownerID}`
-* todos.GET.rego - `todoApp.GET.todos` - policy for `GET /todos`
+* todoApp.DELETE.todos.__id.rego - `todoApp.DELETE.todos.__id` - policy for `DELETE /todos/{id}`
+* todoApp.GET.todos.rego - `todoApp.GET.todos` - policy for `GET /todos`
+* todoApp.GET.users.__userID.rego - `todoApp.GET.users.__userID` - policy for `GET /users/{userID}`
+* todoApp.POST.todos.rego - `todoApp.POST.todos` - policy for `POST /todos`
+* todoApp.PUT.todos.__id.rego - `todoApp.PUT.todos.__id` - policy for `PUT /todos/{id}`
 
 ## Releasing a new version
 

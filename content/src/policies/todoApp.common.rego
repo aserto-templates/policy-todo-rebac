@@ -1,6 +1,6 @@
 package todoApp.common
 
-is_member_of(user_id, group) := x {
+is_member_of(user, group) := x {
   x := ds.check_relation({
     "object": {
       "key": group,
@@ -11,7 +11,8 @@ is_member_of(user_id, group) := x {
       "object_type": "group"
     },
     "subject": {
-      "id": user_id
+      "key": user.key,
+      "type": "user"
     }
   })
 }
