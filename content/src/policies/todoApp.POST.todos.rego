@@ -9,5 +9,5 @@ default allowed = false
 allowed {
   allowedGroups := { "editor", "admin" }
   some group in allowedGroups
-  is_member_of(user.id, group)
+  is_member_of(user, group)
 }

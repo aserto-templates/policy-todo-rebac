@@ -8,10 +8,10 @@ import data.todoApp.common.is_member_of
 default allowed = false
 
 allowed {
-  is_member_of(user.id, "editor")
+  is_member_of(user, "editor")
   user.key == resource.ownerID
 }
 
 allowed {
-  is_member_of(user.id, "evil_genius")
+  is_member_of(user, "evil_genius")
 }
